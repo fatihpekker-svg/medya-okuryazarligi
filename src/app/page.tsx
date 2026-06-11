@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Sprout, Search, GraduationCap } from "lucide-react";
+import { Sprout, Search, GraduationCap, Mail, Video } from "lucide-react";
 
 const modules = [
   { id: 1, title: "Medya Nedir?", desc: "Medya türleri, toplumsal rolü ve tüketim alışkanlıkları" },
@@ -284,7 +284,9 @@ export default function HomePage() {
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '20px', marginTop: '40px', maxWidth: '800px', margin: '40px auto 0' }}>
             <div className="case-card">
-              <img src="https://via.placeholder.com/120x80/1e293b/64748b?text=Haber" alt="Haber" style={{ borderRadius: '8px' }} />
+              <div style={{ minWidth: '120px', height: '80px', borderRadius: '8px', background: 'rgba(239, 68, 68, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <Mail size={32} color="var(--danger-500)" />
+              </div>
               <div style={{ flex: 1 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px' }}>
                   <h3 style={{ fontSize: '1.1rem', color: 'var(--gray-100)' }}>Sahte İndirim Kampanyası</h3>
@@ -298,7 +300,9 @@ export default function HomePage() {
             </div>
 
             <div className="case-card">
-              <img src="https://via.placeholder.com/120x80/1e293b/64748b?text=Sosyal" alt="Sosyal" style={{ borderRadius: '8px' }} />
+              <div style={{ minWidth: '120px', height: '80px', borderRadius: '8px', background: 'rgba(245, 158, 11, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <Video size={32} color="var(--warning-500)" />
+              </div>
               <div style={{ flex: 1 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px' }}>
                   <h3 style={{ fontSize: '1.1rem', color: 'var(--gray-100)' }}>Montajlı Siyasi Video</h3>
