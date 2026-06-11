@@ -148,7 +148,7 @@ export default function DashboardPage() {
         </section>
 
         {/* ===== STATS & BADGES ===== */}
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 2fr", gap: "32px", marginBottom: "48px", flexWrap: "wrap" }}>
+        <div className="dashboard-stats-grid">
           {/* Certificates Card */}
           <div className="glass-card" style={{ display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
             <div>

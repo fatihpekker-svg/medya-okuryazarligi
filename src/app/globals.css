@@ -931,3 +931,16 @@ button {
     padding: 48px 20px;
   }
 }
+
+/* Dashboard Grid Mobile Fix */
+.dashboard-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+@media (max-width: 768px) {
+  .dashboard-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
